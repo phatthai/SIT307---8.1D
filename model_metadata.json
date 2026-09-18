@@ -1,0 +1,60 @@
+{
+  "model_name": "Gradient Boosting",
+  "target": "log(Sold price)",
+  "numeric_features": [
+    "Bedrooms",
+    "Bathrooms",
+    "car_spaces",
+    "land_size",
+    "months_before_latest"
+  ],
+  "binary_features": [
+    "has_land",
+    "land_imputed",
+    "f_renovated",
+    "f_brand_new",
+    "f_needs_work",
+    "f_dev_potential",
+    "f_granny_flat",
+    "f_view",
+    "f_private_pool",
+    "f_complex_facilities",
+    "f_near_transport",
+    "f_premium_finish",
+    "f_period_character",
+    "f_ensuite",
+    "f_ducted_ac",
+    "f_study_extra_living",
+    "f_alfresco"
+  ],
+  "categorical_features": [
+    "Suburb",
+    "type_group",
+    "Sale method"
+  ],
+  "suburbs": [
+    "Blacktown",
+    "Chatswood",
+    "Parramatta"
+  ],
+  "type_groups": [
+    "Attached",
+    "House",
+    "Unit"
+  ],
+  "sale_methods": [
+    "auction",
+    "prior to auction",
+    "private treaty"
+  ],
+  "cv_mape": 17.349170198919143,
+  "cv_mae_dollars": 276867.8965121301,
+  "cv_r2_log": 0.8692469801323304,
+  "training_rows": 110,
+  "price_range": [
+    320000,
+    6200000
+  ],
+  "latest_sold_date": "2026-09-18",
+  "sklearn_version": "1.8.0"
+}
